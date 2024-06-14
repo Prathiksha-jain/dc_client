@@ -1,0 +1,33 @@
+.main-wrapper {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px 0;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.divider {
+    height: 3px;
+    width: 50px;
+    background-color: #007bff; /* Primary color for the divider */
+    margin: 0 auto;
+}
+
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #007bff; /* Primary color for buttons */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.accordion-body {
+    font-size: 0.95rem;
+    color: #555;
+}
