@@ -5,10 +5,10 @@ import "../Styles/Faq.css";
 
 const Faq = () => {
     return (
-        <div className="main-wrapper py-5">
-            <div className="containe">
-                <h4 className="heading text-center mb-4">Frequently Asked Questions</h4>
-                <div className="divider mb-5"></div>
+        <div className="container">
+            <div className="main-wrapper py-5 text-center">
+                <h4 className="heading mb-4">Frequently Asked Questions</h4>
+                <div className="divider mb-4"></div>
                 <div className="accordion" id="faqAccordion">
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingOne">

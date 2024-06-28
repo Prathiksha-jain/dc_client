@@ -8,7 +8,7 @@ import '../Styles/Slides.css';
 const Slides = () => {
     const settings = {
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         dots: false,
         infinite: true,
         speed: 500,
@@ -57,8 +57,7 @@ const Slides = () => {
                     </div>
 
             </Slider>
-            
-        </div>
+      </div>
 </>
     );
 }

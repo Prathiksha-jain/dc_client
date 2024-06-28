@@ -8,13 +8,14 @@ const Emotional = () => {
     return (
         <div className="containe">
             <div className="text-center">
-                <h2 className="section-title">What can you do for a better Dakshina Kannada</h2>
+                <h2 className="heading text-center">What can you do for a better Dakshina Kannada</h2>
+                <div className="Divider"></div>
             </div>
             <div id="cardCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="row g-4">
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">
@@ -32,7 +33,7 @@ const Emotional = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">
@@ -51,8 +52,26 @@ const Emotional = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                              <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div className="card">
+                                    <div className="slide slide1">
+                                        <div className="image-wrapper">
+                                            <img src="https://kettocdn.gumlet.io/media/campaign/896000/896598/image/wid65d81b61c6cda.jpg?w=320&dpr=1.0" alt="Health" />
+                                            <div className="overlay">
+                                                <p>Health</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="slide slide2">
+                                        <div className="content">
+                                            <h3>Help Make a Difference</h3>
+                                            <p>Trust yourself and keep going.</p>
+                                            <p>Trust yoing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">
@@ -74,7 +93,7 @@ const Emotional = () => {
                     </div>
                     <div className="carousel-item">
                         <div className="row g-4">
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">
@@ -93,7 +112,7 @@ const Emotional = () => {
                                 </div>
                             </div>
                             
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">
@@ -111,7 +130,7 @@ const Emotional = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                            <div className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                                 <div className="card">
                                     <div className="slide slide1">
                                         <div className="image-wrapper">

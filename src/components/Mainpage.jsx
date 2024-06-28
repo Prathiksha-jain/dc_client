@@ -4,9 +4,9 @@ import '../index.css';
 const Mainpage = () => {
   return (
     
-    <div className="row" style={{ paddingBottom: "20px", margin: "0px", backgroundImage: "url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1536&dpr=1.0)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "fixed" }}>
+    <div className="row" style={{ paddingBottom: "10px", margin: "0px", backgroundImage: "url(https://kettocdn.gumlet.io/media/banner/0/71/image/626a109be777492340e46d013c3cad0857a5da3a.png?w=1536&dpr=1.0)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "fixed" }}>
       <div className='col-lg-6 col-md-6 col-sm-12'></div>
-      <div className='col-lg-6 col-md-6 col-sm-12' style={{ padding: "40px" }}>
+      <div className='col-lg-6 col-md-6 col-sm-12' style={{ padding: "25px" }}>
         <h3 class=" fw-bold text-body-emphasis mt-4 mb-3">
           Need Funds to Pay For a Medical Emergency or Social Cause?
         </h3>
