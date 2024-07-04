@@ -9,7 +9,7 @@ import donate1 from '../assets/donate1.jpg';
 const About = () => {
   return (
     <>
-      <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+      <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-0 shadow-lg"
         style={{
           backgroundImage: `url(${donate1})`,
           backgroundSize: 'cover',
@@ -20,16 +20,16 @@ const About = () => {
       >
         <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
           <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-            About Us
+            Steps to follow to <span style={{color:"red"}}>Raise Funds</span>
           </h3>
-          <button className="btn btn-donate mt-auto">Why Join Us</button>
+          <button className="btn mt-auto bg-primary">Follow the below steps to raise funds for any of your events.</button>
         </div>
       </div>
 
       <div className="container py-5">
         <div className="row row-cols-1 row-cols-md-4 g-4">
           <div className="col">
-            <div className="feature-item d-flex flex-column align-items-center gap-2">
+            <div className="feature-item d-flex flex-column align-items-center gap-2 cardd">
               <div className="feature-image rounded-circle overflow-hidden" style={{
                 backgroundImage: `url(${money})`,
                 backgroundSize: 'cover',
@@ -46,7 +46,7 @@ const About = () => {
           </div>
 
           <div className="col">
-            <div className="feature-item d-flex flex-column align-items-center gap-2">
+            <div className="feature-item d-flex flex-column align-items-center gap-2 cardd">
               <div className="feature-image rounded-circle overflow-hidden" style={{
                 backgroundImage: `url(${commu})`,
                 backgroundSize: 'cover',
@@ -63,7 +63,7 @@ const About = () => {
           </div>
 
           <div className="col">
-            <div className="feature-item d-flex flex-column align-items-center gap-2">
+            <div className="feature-item d-flex flex-column align-items-center gap-2 cardd">
               <div className="feature-image rounded-circle overflow-hidden" style={{
                 backgroundImage: `url(${heart})`,
                 backgroundSize: 'cover',
@@ -80,7 +80,7 @@ const About = () => {
           </div>
 
           <div className="col">
-            <div className="feature-item d-flex flex-column align-items-center gap-2">
+            <div className="feature-item d-flex flex-column align-items-center gap-2 cardd">
               <div className="feature-image rounded-circle overflow-hidden" style={{
                 backgroundImage: `url(${invest})`,
                 backgroundSize: 'cover',

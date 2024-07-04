@@ -11,7 +11,7 @@ import {
 
 const HeaderBar = () => {
   return (
-    <header className="p-3 mb-0 border-bottom">
+    <header className="p-3 mb-0 border-bottom header-bar">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">

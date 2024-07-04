@@ -2,7 +2,8 @@ import './App.css'
 import {BrowserRouter , Routes, Route} from  "react-router-dom";
 import  Home  from './components/Home'
 import Training from "./components/Training";
-import './index.css'
+import Description from "./components/Description.jsx";
+import './index.css';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Home />} />
         <Route path="/training" element={ <Training />} />
+        <Route path="/description" element ={ <Description/>}/>
       </Routes>
     </BrowserRouter>
   )
