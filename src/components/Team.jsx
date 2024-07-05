@@ -1,14 +1,19 @@
-import team1 from '../assets/img/team/team-1.jpg';
-import team2 from '../assets/img/team/team-2.jpg';
-import team3 from '../assets/img/team/team-3.jpg';
+/* eslint-disable no-unused-vars */
+import React from "react";
+import team1 from "../assets/img/team/team-1.jpg";
+import team2 from "../assets/img/team/team-2.jpg";
+import team3 from "../assets/img/team/team-3.jpg";
 
 const Team = () => {
   return (
     <div className="container">
       <div className="section-title" data-aos="fade-in" data-aos-delay="100">
         <h2>Team</h2>
-        <p style={{color:"black"}}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        <p style={{ color: "black" }}>
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+          fugiat sit in iste officiis commodi quidem hic quas.
         </p>
       </div>
 
@@ -22,10 +27,18 @@ const Team = () => {
               <h4>Walter White</h4>
               <span>Chief Executive Officer</span>
               <div className="social">
-                <a href="#"><i className="bi bi-twitter"></i></a>
-                <a href="#"><i className="bi bi-facebook"></i></a>
-                <a href="#"><i className="bi bi-instagram"></i></a>
-                <a href="#"><i className="bi bi-linkedin"></i></a>
+                <a href="#">
+                  <i className="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-linkedin"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -40,10 +53,18 @@ const Team = () => {
               <h4>Sarah Jhonson</h4>
               <span>Product Manager</span>
               <div className="social">
-                <a href="#"><i className="bi bi-twitter"></i></a>
-                <a href="#"><i className="bi bi-facebook"></i></a>
-                <a href="#"><i className="bi bi-instagram"></i></a>
-                <a href="#"><i className="bi bi-linkedin"></i></a>
+                <a href="#">
+                  <i className="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-linkedin"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -58,10 +79,18 @@ const Team = () => {
               <h4>William Anderson</h4>
               <span>CTO</span>
               <div className="social">
-                <a href="#"><i className="bi bi-twitter"></i></a>
-                <a href="#"><i className="bi bi-facebook"></i></a>
-                <a href="#"><i className="bi bi-instagram"></i></a>
-                <a href="#"><i className="bi bi-linkedin"></i></a>
+                <a href="#">
+                  <i className="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                  <i className="bi bi-linkedin"></i>
+                </a>
               </div>
             </div>
           </div>

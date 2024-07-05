@@ -842,32 +842,6 @@ body {
   /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
-  .portfolio-wrap {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .portfolio-wrap img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  
-  .portfolio-description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    z-index: 10;
-  }
-  
-
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
@@ -1058,10 +1032,6 @@ body {
     margin: 0 auto;
   }
   
-  .img-fluid{
-    object-fit: cover;
-    width: 100%;
-  }
   .testimonials .testimonial-item h3 {
     font-size: 18px;
     font-weight: bold;

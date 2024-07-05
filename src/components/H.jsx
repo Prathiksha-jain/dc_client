@@ -1,4 +1,6 @@
- import '../assets/vendor/bootstrap/css/bootstrap.min.css';
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'; 
+import '../assets/vendor/bootstrap/css/bootstrap.min.css';
   import '../Styles/style.css';
   import '../assets/vendor/bootstrap/css/bootstrap.min.css';
   import '../assets/vendor/boxicons/css/boxicons.min.css';
@@ -15,15 +17,8 @@
   import Services from '../components/Services.jsx';
   import AboutUs from '../components/AboutUs.jsx';
   import '../assets/vendor/swiper/swiper-bundle.min.css';
-  // import dk from '../assets/dk.jpg';
-  // import donate from '../assets/donate.jpg';
-  // import donate1 from '../assets/donate1.jpg';
-  // import edu from '../assets/edu.jpg';
-  // import publics from '../assets/publics.jpg';
-  // import kola from '../assets/kola.jpg';
-  // import commu from '../assets/commu.jpg';
 import Header from '../components/Header.jsx';  
-  const H = () => {
+const H = () => {
     return (
       <>
       <header id="header" className="head fixed-top header-transparent">
@@ -33,7 +28,7 @@ import Header from '../components/Header.jsx';
     <section id="hero">
       <div className="hero-container" data-aos="fade-up">
         <h1>Welcome to Dakshina Kannada Funding Portal</h1>
-        <h2>Be the change maker</h2>
+        <h2>Be a chnage maker</h2>
         <a href="#about" className="btn-get-started scrollto"><i className="bx bx-chevrons-down"></i></a>
       </div>
     </section>
@@ -50,11 +45,13 @@ import Header from '../components/Header.jsx';
       </section>
 
 
-      <section id="portfolio" className="portfolio">
-    <Portfolio/>
-    </section>
+      <section id="services" className="services">
+        <Services/>
+      </section>
 
-    <section id="how">
+
+     
+      <section id="how">
         <About/>
       </section>
 
@@ -63,23 +60,21 @@ import Header from '../components/Header.jsx';
         <Action/>
       </section>
 
-    <section id="services" className="services">
-        <Services/>
-      </section>
-
 
       <section id="testimonials" className="testimonials section-bg">
       <Testimonials/>
 </section>
 
 
-    <Faq/>
+<section id="portfolio" className="portfolio">
+    <Portfolio/>
+    </section>
 
-
-    
     <section id="team" className="team">
        <Team/>
       </section>
+
+    <Faq/>
 
       <section id="contact" className="contact section-bg">
         <Contact/>
