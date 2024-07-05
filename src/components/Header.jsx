@@ -38,10 +38,10 @@ const Header = () => {
         <ul>
           <li><a className={`nav-link scrollto ${activeLink === 'hero' ? 'active' : ''}`} href="#hero">Home</a></li>
           <li><a className={`nav-link scrollto ${activeLink === 'about' ? 'active' : ''}`} href="#about">About Us</a></li>
-          <li><a className={`nav-link scrollto ${activeLink === 'services' ? 'active' : ''}`} href="#services">Services</a></li>
-          <li><a className={`nav-link scrollto ${activeLink === 'portfolio' ? 'active' : ''}`} href="#portfolio">Portfolio</a></li>
-          <li><a className={`nav-link scrollto ${activeLink === 'team' ? 'active' : ''}`} href="#team">Team</a></li>
+          <li><a className={`nav-link scrollto ${activeLink === 'portfolio' ? 'active' : ''}`} href="#portfolio">Donate Funds</a></li>
           <li><a className={`nav-link scrollto ${activeLink === 'how' ? 'active' : ''}`} href="#how">Raise Fund</a></li>
+          <li><a className={`nav-link scrollto ${activeLink === 'services' ? 'active' : ''}`} href="#services">Services</a></li>
+          <li><a className={`nav-link scrollto ${activeLink === 'team' ? 'active' : ''}`} href="#team">Team</a></li>
           <li className="dropdown">
             <a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down"></i></a>
             <ul>
@@ -61,7 +61,7 @@ const Header = () => {
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li className="dropdown megamenu">
+          {/* <li className="dropdown megamenu">
             <a href="#"><span>Mega Menu</span> <i className="bi bi-chevron-down"></i></a>
             <ul>
               <li>
@@ -95,7 +95,7 @@ const Header = () => {
                 <a href="#">Column 5 link 3</a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li><a className={`nav-link scrollto ${activeLink === 'contact' ? 'active' : ''}`} href="#contact">Contact</a></li>
         </ul>
         <i className="bi bi-list mobile-nav-toggle"></i>

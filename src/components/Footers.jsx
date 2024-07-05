@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <div>
@@ -8,7 +6,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="footer-info">
-                <h3>Squadfree</h3>
+                <h3>DAKSHINA KANNADA</h3>
                 <p className="pb-3" style={{color: "black"}}>
                   <em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em>
                 </p>
@@ -63,10 +61,10 @@ const Footer = () => {
 
       <div className="container">
         <div className="copyright">
-          &copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>DAKSHINA KANNADA</span></strong>. All Rights Reserved
         </div>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://bootstrapmade.com/">AIET</a>
         </div>
       </div>
     </div>

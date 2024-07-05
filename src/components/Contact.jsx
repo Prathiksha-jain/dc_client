@@ -6,9 +6,7 @@ const Contact = () => {
       <div className="section-title">
         <h2>Contact</h2>
         <p style={{color:"black"}}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.
+        We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out to us. Our team is here to assist you and ensure you have the best experience possible.
         </p>
       </div>
 

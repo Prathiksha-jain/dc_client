@@ -33,7 +33,7 @@ import Header from '../components/Header.jsx';
     <section id="hero">
       <div className="hero-container" data-aos="fade-up">
         <h1>Welcome to Dakshina Kannada Funding Portal</h1>
-        <h2>Be a chnage maker</h2>
+        <h2>Be the change maker</h2>
         <a href="#about" className="btn-get-started scrollto"><i className="bx bx-chevrons-down"></i></a>
       </div>
     </section>
@@ -50,13 +50,11 @@ import Header from '../components/Header.jsx';
       </section>
 
 
-      <section id="services" className="services">
-        <Services/>
-      </section>
+      <section id="portfolio" className="portfolio">
+    <Portfolio/>
+    </section>
 
-
-     
-      <section id="how">
+    <section id="how">
         <About/>
       </section>
 
@@ -65,21 +63,23 @@ import Header from '../components/Header.jsx';
         <Action/>
       </section>
 
+    <section id="services" className="services">
+        <Services/>
+      </section>
+
 
       <section id="testimonials" className="testimonials section-bg">
       <Testimonials/>
 </section>
 
 
-<section id="portfolio" className="portfolio">
-    <Portfolio/>
-    </section>
+    <Faq/>
 
+
+    
     <section id="team" className="team">
        <Team/>
       </section>
-
-    <Faq/>
 
       <section id="contact" className="contact section-bg">
         <Contact/>
