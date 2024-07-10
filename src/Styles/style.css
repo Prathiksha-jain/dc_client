@@ -183,6 +183,10 @@ body {
     font-weight: bold;
   }
   
+  .navbar h1:hover>a{
+    background-color: transparent;
+  }
+
   .navbar .dropdown ul {
     display: block;
     position: absolute;
