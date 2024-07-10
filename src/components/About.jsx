@@ -1,10 +1,10 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import kola from '../assets/kola.jpg';
 import money from '../assets/money.jpg';
 import commu from '../assets/commu.jpg';
 import heart from '../assets/heart.jpg';
 import invest from '../assets/invest.jpg';
-import donate from '../assets/donate.jpg';
+
 import donate1 from '../assets/donate1.jpg';
 const About = () => {
   return (

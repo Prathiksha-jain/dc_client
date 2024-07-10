@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import commu from '../assets/commu.jpg';
 import heart from '../assets/heart.jpg';
 import invest from '../assets/invest.jpg';
