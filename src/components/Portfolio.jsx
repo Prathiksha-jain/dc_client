@@ -11,7 +11,7 @@ const Portfolio = () => {
     publicSpaces: [],
   });
 
-  const initialItemsToShow = 6; // Initial number of items to show
+  const initialItemsToShow = 3; // Initial number of items to show
   const [itemsToShow, setItemsToShow] = useState(initialItemsToShow);
   const [showLoadMore, setShowLoadMore] = useState(true);
   const portfolioRef = useRef(null);
@@ -105,11 +105,28 @@ const Portfolio = () => {
         key={item._id}
       >
         <div className="portfolio-wrap">
-          <img
-            src={item.imagePath || "placeholder.jpg"}
-            className="img-fluid"
-            alt={item.name}
-          />
+          <div
+            className="portfolio-image"
+            style={{
+              backgroundImage: item.imagePath
+                ? `url(${item.imagePath ? item.imagePath[0] : ""})`
+                : "none",
+              backgroundColor: item.imagePath ? "transparent" : "#f0f0f0",
+              objectFit:"cover"
+            }}
+          >
+            {!item.imagePath && (
+              <p className="no-image-text">No Image Available</p>
+            )}
+          </div>
+          <div
+            className="portfolio-title"
+            style={{ backgroundColor: "#ecf5f9" }}
+          >
+            <p style={{ color: "black" }}>
+              {item.name || item.schoolName || item.projectName}
+            </p>
+          </div>
           <div className="portfolio-links">
             <a
               href={item.imagePath || "placeholder.jpg"}

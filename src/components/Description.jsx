@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { format } from "date-fns";
+import { format, differenceInCalendarDays } from "date-fns";
 import "../assets/vendor/bootstrap/css/bootstrap.min.css";
 import "../assets/vendor/boxicons/css/boxicons.min.css";
 import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -42,7 +42,7 @@ const Description = () => {
     try {
       const response = await fetch(endpoint);
       const result = await response.json();
-      setItemDetails(result);
+      setItemDetails(Array.isArray(result) ? result : [result]);
     } catch (error) {
       console.error("Error fetching item details:", error);
     }
@@ -51,6 +51,13 @@ const Description = () => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return format(date, "MMMM d, yyyy");
+  };
+
+  const calculateDaysLeft = (endDate) => {
+    const now = new Date();
+    const end = new Date(endDate);
+    const daysFromNowToEnd = differenceInCalendarDays(end, now);
+    return daysFromNowToEnd;
   };
 
   return (
@@ -75,11 +82,13 @@ const Description = () => {
         >
           <div className="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-primary">
             <div className="col-lg-6 px-0">
-              <h1 className="display-4 fst-italic">{item.name}</h1>
+              <h1 className="display-4 fst-italic">
+                {item.name || item.schoolName || item.projectName}
+              </h1>
               <p className="lead my-3">
                 The {category === "events" ? "Organizers" : "fundraiser"} of
                 this {category === "events" ? "event" : "project"} is{" "}
-                {item.organizers}
+                {item.organizers || item.fundRaiserName}
               </p>
             </div>
           </div>
@@ -87,34 +96,37 @@ const Description = () => {
       ))}
 
       <main className="container">
-        <section id="testimonials" className="testimonials section-bg">
-          <div className="container">
-            {itemDetails.imagePath && itemDetails.imagePath.length > 0 ? (
+        {itemDetails.length > 0 && itemDetails[0].imagePath ? (
+          <section id="testimonials" className="testimonials section-bg">
+            <div className="container">
               <div
                 id="carouselExampleControls"
                 className="carousel slide"
                 data-bs-ride="carousel"
               >
                 <div className="carousel-inner">
-                  {itemDetails.imagePath.map((image, index) => (
-                    <div
-                      className={`carousel-item ${index === 0 ? "active" : ""}`}
-                      key={index}
-                    >
-                      <div className="swiper-slide">
-                        <div className="testimonial-item">
-                          <p style={{ color: "black" }}>
-                            <img
-                              src={image}
-                              className="images"
-                              alt=""
-                              style={{ width: "100%" }}
-                            />
-                          </p>
+                  {itemDetails.length > 0 &&
+                    itemDetails[0]?.imagePath?.map((image, index) => (
+                      <div
+                        className={`carousel-item ${
+                          index === 0 ? "active" : ""
+                        }`}
+                        key={index}
+                      >
+                        <div className="swiper-slide">
+                          <div className="testimonial-item">
+                            <p style={{ color: "black" }}>
+                              <img
+                                src={image}
+                                className="images"
+                                alt=""
+                                style={{ width: "100%" }}
+                              />
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
                 <button
                   className="carousel-control-prev"
@@ -143,11 +155,11 @@ const Description = () => {
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
-            ) : (
-              <p>No images available for this item.</p>
-            )}
-          </div>
-        </section>
+            </div>
+          </section>
+        ) : (
+          <></>
+        )}
 
         {itemDetails.map((item, index) => (
           <div className="row g-5" key={index}>
@@ -160,11 +172,9 @@ const Description = () => {
                   Sample blog post
                 </h2>
                 <p className="blog-post-meta" style={{ color: "black" }}>
-                  {formatDate(item.sdate)} by
+                  {formatDate(item.edate)} by
                 </p>
-                <p style={{ color: "black" }}>
-                  {item.description}
-                </p>
+                <p style={{ color: "black" }}>{item.description}</p>
                 <hr />
                 <p style={{ color: "black" }}>
                   This is some additional paragraph placeholder content. It has
@@ -194,12 +204,18 @@ const Description = () => {
                 <div className="p-4 mb-3 bg-body-tertiary rounded">
                   <div className="modal-content rounded-4 shadow">
                     <div className="modal-body p-5">
-                      <h2 className="fw-bold mb-0">Help in making a difference</h2>
+                      <h2 className="fw-bold mb-0">
+                        Help in making a difference
+                      </h2>
 
                       <ul className="d-grid gap-4 my-5 list-unstyled small">
                         <li className="d-flex gap-4">
                           <div>
-                            <h5 className="mb-0">Days Left</h5>7{new Date(item.edate) - item.sdate} days left to end.
+                            <h5 className="mb-0">Days Left</h5>
+                            {calculateDaysLeft(item.edate) < 0
+                              ? 0 + " "
+                              : calculateDaysLeft(item.edate) + " "}
+                            days left to end.
                           </div>
                         </li>
                       </ul>
