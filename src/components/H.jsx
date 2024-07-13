@@ -1,37 +1,73 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react'; 
-import '../assets/vendor/bootstrap/css/bootstrap.min.css';
-  import '../Styles/style.css';
-  import '../assets/vendor/bootstrap/css/bootstrap.min.css';
-  import '../assets/vendor/boxicons/css/boxicons.min.css';
-  import '../assets/vendor/bootstrap-icons/bootstrap-icons.css';
-  import Faq from './Faq';
-  import Footers from '../components/Footers.jsx';
-  import Portfolio from '../components/Portfolio.jsx';
-  import Action from '../components/Action.jsx';
-  import About from '../components/About.jsx';
-  import Contact from '../components/Contact.jsx'
-  import Team from '../components/Team.jsx';
-  import Testimonials from '../components/Testimonials.jsx';
-  import Statistics from '../components/Statistics.jsx';
-  import Services from '../components/Services.jsx';
-  import AboutUs from '../components/AboutUs.jsx';
-  import '../assets/vendor/swiper/swiper-bundle.min.css';
-import Header from '../components/Header.jsx';  
+import { useEffect, useRef } from 'react';
+import Header from '../components/Header.jsx';
+import AboutUs from '../components/AboutUs.jsx';
+import Statistics from '../components/Statistics.jsx';
+import Portfolio from '../components/Portfolio.jsx';
+import About from '../components/About.jsx';
+import Action from '../components/Action.jsx';
+import Services from '../components/Services.jsx';
+import Testimonials from '../components/Testimonials.jsx';
+import Faq from './Faq';
+import Team from '../components/Team.jsx';
+import Contact from '../components/Contact.jsx';
+import Footers from '../components/Footers.jsx';
+import '../Styles/style.css';
+import kamblaImage from '../assets/img/home/kambla.jpg';
+import huliImage from '../assets/img/home/huli.jpg';
+import fishermanImage from '../assets/img/home/fisherman.jpeg';
+import amrithShettyImage from '../assets/img/home/amrith-shetty-yxfgsX1rlNM-unsplash.jpg';
+import didupeWaterfallsImage from '../assets/img/home/Didupe-waterfalls46091.jpg';
+
+const images = [
+  kamblaImage,
+  huliImage,
+  fishermanImage,
+  amrithShettyImage,
+  didupeWaterfallsImage,
+];
 const H = () => {
+  
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    
+    const slides = carouselRef.current.children;
+    let currentSlide = 0;
+
+    const interval = setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
     return (
       <>
-      <header id="header" className="head fixed-top header-transparent">
-      <Header/>
-    </header>
-
-    <section id="hero">
-      <div className="hero-container" data-aos="fade-up">
-        <h1>Welcome to Dakshina Kannada Funding Portal</h1>
-        <h2>Be a chnage maker</h2>
-        <a href="#about" className="btn-get-started scrollto"><i className="bx bx-chevrons-down"></i></a>
+     <div className='head fixed-top header-transparent'>
+        <header id="header" >
+          <Header />
+        </header>
       </div>
-    </section>
+      <section id="hero" className="hero">
+       
+        <div className="carousel" ref={carouselRef}>
+        {images.map((image, index) => (
+        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+          <img src={image} alt={`Slide ${index + 1}`} />
+        </div>
+      ))}
+        </div>
+
+        <div className="hero-text-container">
+          <h1>Welcome to Dakshina Kannada Funding Portal</h1>
+          <h2>Be the change maker</h2>
+          <a href="#about" className="btn-get-started scrollto">
+            <i className="bx bx-chevrons-down"></i>
+          </a>
+        </div>
+      </section>
+
 
     <main id="main">
   
@@ -45,13 +81,11 @@ const H = () => {
       </section>
 
 
-      <section id="services" className="services">
-        <Services/>
-      </section>
+      <section id="portfolio" className="portfolio">
+    <Portfolio/>
+    </section>
 
-
-     
-      <section id="how">
+    <section id="how">
         <About/>
       </section>
 
@@ -61,18 +95,20 @@ const H = () => {
       </section>
 
 
+      <section id="services" className="services">
+        <Services/>
+      </section>
+
+
+     
+   
+
       <section id="testimonials" className="testimonials section-bg">
       <Testimonials/>
 </section>
 
 
-<section id="portfolio" className="portfolio">
-    <Portfolio/>
-    </section>
 
-    <section id="team" className="team">
-       <Team/>
-      </section>
 
     <Faq/>
 

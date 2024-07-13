@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import '../Styles/Downloadpdf.css'; // Import the CSS file for styling
 
 const CallToAction = () => {
+  useEffect(() => {
+    const downloadBtn = document.getElementById('downloadBtn');
+    const handleClick = () => {
+      const link = document.createElement('a');
+      link.href = 'sample.pdf';
+      link.download = 'sample.pdf';
+      link.click();
+    };
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', handleClick);
+    }
+
+    return () => {
+      if (downloadBtn) {
+        downloadBtn.removeEventListener('click', handleClick);
+      }
+    };
+  }, []);
+
   return (
     <div className="container" data-aos="zoom-in">
       <div className="text-center">
-        <h3>Call To Action</h3>
+        <h3>Download Template</h3>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          To begin the process of raising funds, please download the template form by clicking the button below. Once downloaded, fill out the form with the necessary details. After completing the form, take it to the DC (Documentation Center) for further validation and confirmation. This step is crucial to ensure that all information is accurate and meets the required standards for fundraising.
         </p>
-        <a className="cta-btn" href="#">Call To Action</a>
+        
+        <button className="cta-btn" id="downloadBtn">Download Template</button>
       </div>
     </div>
   );

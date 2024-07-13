@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import commu from '../assets/commu.jpg';
 import heart from '../assets/heart.jpg';
 import invest from '../assets/invest.jpg';
@@ -15,9 +16,9 @@ const AboutUs = () => {
     <div className="content col-xl-4 d-flex align-items-stretch" data-aos="fade-up">
       <div className="content bg-primary p-5" style={{textAlign:"center",margin:"30px"}}>
         <h3 style={{color:"white"}}>Why choose us?</h3>
-       
-        <a href="#" className="about-btn">More About The Portal<i className="bx bx-chevron-right"></i></a>
-      </div>
+        <Link to="/aboutdc" className="about-btn">More About The Portal<i className="bx bx-chevron-right"></i>
+        </Link>
+        </div>
     </div>
     <div className="col-xl-8 d-flex align-items-stretch">
       <div className="icon-boxes d-flex flex-column justify-content-center">

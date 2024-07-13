@@ -8,9 +8,9 @@ const Testimonials = () => {
   return (
     <div className="container">
       <div className="section-title" data-aos="fade-in" data-aos-delay="100">
-        <h2>Testimonials</h2>
+        <h2>Upcoming Projects</h2>
         <p style={{ color: "black" }}>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+          Discover the exciting projects coming up in our district. Stay informed about the latest initiatives and be a part of the community's growth and development.
         </p>
       </div>
 
@@ -21,12 +21,12 @@ const Testimonials = () => {
               <div className="testimonial-item">
                 <p style={{ color: "black" }}>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  The Education Initiative: A project to enhance educational infrastructure and resources. Starting on 15th August.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src={edu} className="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src={edu} className="testimonial-img" alt="Education Project" />
+                <h3>Education Initiative</h3>
+                <h4>Starting: 15th August</h4>
               </div>
             </div>
           </div>
@@ -35,12 +35,12 @@ const Testimonials = () => {
               <div className="testimonial-item">
                 <p style={{ color: "black" }}>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  The Community Development Project: Aiming to build community centers and improve local amenities. Starting on 1st September.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src={kola} className="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src={commu} className="testimonial-img" alt="Community Development Project" />
+                <h3>Community Development</h3>
+                <h4>Starting: 1st September</h4>
               </div>
             </div>
           </div>
@@ -49,12 +49,12 @@ const Testimonials = () => {
               <div className="testimonial-item">
                 <p style={{ color: "black" }}>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  The Public Spaces Enhancement: Focused on creating more green spaces and recreational areas. Starting on 10th October.
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src={edu} className="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src={publics} className="testimonial-img" alt="Public Spaces Enhancement" />
+                <h3>Public Spaces Enhancement</h3>
+                <h4>Starting: 10th October</h4>
               </div>
             </div>
           </div>

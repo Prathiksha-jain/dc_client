@@ -67,7 +67,7 @@ const Statistics = () => {
           <div className="count-box">
             <i className="bi bi-emoji-smile"></i>
             <span>{counts.happyClients}</span>
-            <p><strong>Happy Clients</strong> consequuntur quae</p>
+            <p><strong>Happy Backers</strong> supporting various projects</p>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ const Statistics = () => {
           <div className="count-box">
             <i className="bi bi-journal-richtext"></i>
             <span>{counts.projects}</span>
-            <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            <p><strong>Projects Funded</strong> successfully by the community</p>
           </div>
         </div>
 
@@ -83,7 +83,7 @@ const Statistics = () => {
           <div className="count-box">
             <i className="bi bi-headset"></i>
             <span>{counts.hoursOfSupport}</span>
-            <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            <p><strong>Hours of Support</strong> provided to project creators</p>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ const Statistics = () => {
           <div className="count-box">
             <i className="bi bi-people"></i>
             <span>{counts.hardWorkers}</span>
-            <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            <p><strong>Dedicated Team Members</strong> working towards success</p>
           </div>
         </div>
       </div>

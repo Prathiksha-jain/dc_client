@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import team1 from "../assets/img/team/team-1.jpg";
-import team2 from "../assets/img/team/team-2.jpg";
-import team3 from "../assets/img/team/team-3.jpg";
+import team1 from "../assets/team1.jpg";
+import team2 from  "../assets/team2.jpg";
+import "../Styles/Team.css" // Import your CSS file for styling
 
 const Team = () => {
   return (
@@ -21,11 +20,11 @@ const Team = () => {
         <div className="col-lg-4 col-md-6">
           <div className="member" data-aos="fade-up">
             <div className="pic">
-              <img src={team2} className="img-fluid" alt="" />
+              <img src={team2} className="team-image" alt="" />
             </div>
             <div className="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4> Mullai Muhilan MP</h4>
+              <span> Deputy Commissioner (DC) of Dakshina Kannada (DK)</span>
               <div className="social">
                 <a href="#">
                   <i className="bi bi-twitter"></i>
@@ -47,11 +46,11 @@ const Team = () => {
         <div className="col-lg-4 col-md-6">
           <div className="member" data-aos="fade-up" data-aos-delay="150">
             <div className="pic">
-              <img src={team1} className="img-fluid" alt="" />
+              <img src={team1} className="team-image" alt="" />
             </div>
             <div className="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
+              <h4>P Shravan Kumar</h4>
+              <span>Probationary IAS officer of Dakshina Kannada (DK)</span>
               <div className="social">
                 <a href="#">
                   <i className="bi bi-twitter"></i>
@@ -71,13 +70,13 @@ const Team = () => {
         </div>
 
         <div className="col-lg-4 col-md-6">
-          <div className="member" data-aos="fade-up" data-aos-delay="300">
+          <div className="member" data-aos="fade-up">
             <div className="pic">
-              <img src={team3} className="img-fluid" alt="" />
+              <img src={team2} className="team-image" alt="" />
             </div>
             <div className="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
+              <h4> Mullai Muhilan MP</h4>
+              <span> Deputy Commissioner (DC) of Dakshina Kannada (DK)</span>
               <div className="social">
                 <a href="#">
                   <i className="bi bi-twitter"></i>
